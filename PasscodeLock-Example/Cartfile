@@ -1,0 +1,2 @@
+github "Square/Valet" ~> 3.2.2
+git "../"
