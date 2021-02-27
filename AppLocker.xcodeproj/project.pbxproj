@@ -50,7 +50,7 @@
 /* Begin PBXFileReference section */
 		2E3F8C5B25EA4E5D00275BE4 /* AppLocker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLocker.xib; sourceTree = "<group>"; };
 		2E3F8C5C25EA4E5D00275BE4 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
-		"AppLocker::AppLocker::Product" /* AppLocker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AppLocker::AppLocker::Product" /* AppLocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppLocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"AppLocker::AppLockerTests::Product" /* AppLockerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppLockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* AppLockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockerTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -123,7 +123,6 @@
 				OBJ_22 /* AppLockerLogo.png */,
 				OBJ_23 /* AppLocker.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -214,7 +213,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			packageReferences = (
 				2E3F8C5025EA4E1400275BE4 /* XCRemoteSwiftPackageReference "Valet" */,
 			);
@@ -288,6 +287,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -319,6 +319,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -350,6 +351,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -366,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
 				SWIFT_VERSION = 5.0;
 			};
@@ -375,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
 				SWIFT_VERSION = 5.0;
 			};
@@ -399,6 +403,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
