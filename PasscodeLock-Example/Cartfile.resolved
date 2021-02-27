@@ -1,2 +1,2 @@
-git "file:///Users/ozgur/src/AppLocker" "2.0"
 github "Square/Valet" "3.2.8"
+github "ozgurodabasi/AppLocker" "2.0"

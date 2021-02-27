@@ -1,2 +1,2 @@
 github "Square/Valet" ~> 3.2.2
-git "file:///Users/ozgur/src/AppLocker"
+github "ozgurodabasi/AppLocker"
