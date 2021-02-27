@@ -15,7 +15,10 @@ let package = Package(
             targets: ["AppLocker"]),
     ],
     dependencies: [
-        // .package(url: "https://github.com/Square/Valet", from: "4.0.0"),
+        .package(
+            name: "Valet",
+            url: "https://github.com/Square/Valet",
+            from: "4.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
